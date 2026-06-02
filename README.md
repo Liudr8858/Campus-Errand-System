@@ -193,7 +193,7 @@ baseUrl = "http://localhost:8080"
 | Maven         | 3.8+  |
 | MySQL         | 8.x   |
 | IntelliJ IDEA | 2024+ |
-| 微信开发者工具       | 最新版   |
+| 微信开发者工具       | 2.01.2510260   |
 
 ---
 
@@ -211,8 +211,6 @@ baseUrl = "http://localhost:8080"
 ## 作者
 
 刘东润
-
-软件工程专业毕业设计项目
 
 GitHub：
 
