@@ -187,10 +187,10 @@ baseUrl = "http://localhost:8080"
 
 | 软件            | 版本    |
 | ------------- | ----- |
-| JDK           | 17    |
-| Maven         | 3.8+  |
-| MySQL         | 8.x   |
-| IntelliJ IDEA | 2024+ |
+| JDK           | 21   |
+| Maven         | 3|
+| MySQL         | 8.0  |
+| IntelliJ IDEA | 2025.3.3 |
 | 微信开发者工具       | 2.01.2510260   |
 
 ---
@@ -210,9 +210,8 @@ baseUrl = "http://localhost:8080"
 
 刘东润
 
-GitHub：
-
-https://github.com/Liudr8858
+作者qq：981171606
+欢迎联系
 
 ---
 
