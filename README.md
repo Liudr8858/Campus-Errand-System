@@ -179,9 +179,7 @@ baseUrl = "http://localhost:8080"
 
 ![发布任务](screenshots/publish.png)
 
-### 个人中心
 
-![个人中心](screenshots/profile.png)
 
 ---
 
