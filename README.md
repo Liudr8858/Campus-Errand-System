@@ -137,15 +137,6 @@ mvn spring-boot:run
 ```text
 CampusErrandApplication.java
 ```
-
-默认访问地址：
-
-```text
-http://localhost:8080
-```
-
----
-
 ## 微信小程序运行
 
 1. 打开微信开发者工具
@@ -158,7 +149,7 @@ front-end/campus-errand
 3. 修改接口地址
 
 ```javascript
-baseUrl = "http://localhost:8080"
+ctrl+shift+f--> 输入10.16.101.36,替换所有为你的服务器IP地址
 ```
 
 4. 编译运行
