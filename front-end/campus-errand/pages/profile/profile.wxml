@@ -1,0 +1,64 @@
+<view style="padding: 20rpx;">
+
+<!-- 👤 用户信息卡片 -->
+<view class="card">
+
+  <view class="title">👤 用户信息</view>
+
+  <view style="margin-top: 20rpx;">
+    手机号：{{user.phone}}
+  </view>
+
+  <view style="margin-top: 10rpx;">
+    用户名：{{user.name}}
+  </view>
+
+  <view style="margin-top: 10rpx;">
+    信用分：{{user.creditScore}}
+  </view>
+
+</view>
+
+<!-- 📍 地址设置卡片 -->
+<view class="card">
+
+<view class="title">📍 收货地址</view>
+
+<!-- 👇 未编辑状态 -->
+<view wx:if="{{!isEditing}}" style="margin-top: 20rpx;">
+  
+  <text>{{address || '暂无地址，请设置'}}</text>
+
+  <text 
+    style="color:#1890ff; margin-left:20rpx;"
+    bindtap="editAddress"
+  >
+    修改
+  </text>
+
+</view>
+
+<!-- 👇 编辑状态 -->
+<view wx:else style="margin-top: 20rpx;">
+
+  <input 
+    value="{{address}}"
+    bindinput="getAddress"
+    class="input"
+    placeholder="请输入收货地址"
+  />
+
+  <button class="btn" bindtap="saveAddress">
+    保存地址
+  </button>
+
+</view>
+
+</view>
+
+<!-- 🚪 退出登录 -->
+<button bindtap="logout" style="margin-top: 40rpx; position: relative; left: 0rpx; top: 356rpx">
+  退出登录
+</button>
+
+</view>

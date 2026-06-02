@@ -1,0 +1,15 @@
+# IDEA
+.idea/
+
+# Maven
+target/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# WeChat
+project.private.config.json

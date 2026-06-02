@@ -1,0 +1,12 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+
+<input style="position: relative; left: 0rpx; top: 400rpx" placeholder="请输入手机号" bindinput="getPhone"/>
+
+<input style="position: relative; left: 0rpx; top: 450rpx" placeholder="请输入密码" password="true" bindinput="getPassword"/>
+
+<button bindtap="login" style="position: relative; left: 0rpx; top: 550rpx">登录</button>
+
+<button bindtap="goRegister" style="margin-top: 20rpx; width: 674rpx; height: 89rpx; display: block; box-sizing: border-box; left: 0rpx; top: 600rpx; position: relative">还没有账号？去注册</button>
+
+</view>

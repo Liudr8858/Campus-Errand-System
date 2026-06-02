@@ -1,0 +1,38 @@
+<view style="padding: 20rpx;">
+  <view wx:if="{{taskList.length == 0}}" class="empty">
+  📭 暂无任务，快去发布一个吧～
+</view>
+<block wx:for="{{taskList}}" wx:key="id">
+
+  <view class="card">
+
+    <view class="title">{{item.title}}</view>
+
+    <view class="desc">{{item.description}}</view>
+
+    <view style="margin-top: 10rpx;">
+      💰 <text class="price">￥{{item.price}}</text>
+    </view>
+
+    <view style="margin-top: 10rpx;">
+      状态：
+      <text wx:if="{{item.status == 0}}">🟢 待接单</text>
+      <text wx:elif="{{item.status == 1}}">🟡 已接单</text>
+      <text wx:elif="{{item.status == 2}}">⚪ 已完成</text>
+    </view>
+
+    <!-- 取消按钮 -->
+    <button 
+      wx:if="{{item.status == 0}}" 
+      class="btn"
+      data-id="{{item.id}}" 
+      bindtap="cancelTask"
+    >
+      取消任务
+    </button>
+
+  </view>
+
+</block>
+
+</view>

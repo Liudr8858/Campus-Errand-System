@@ -1,0 +1,52 @@
+<view class="container">
+
+<view class="card">
+
+  <view class="title">
+    {{task.title}}
+  </view>
+
+  <view class="desc">
+    {{task.description}}
+  </view>
+
+  <view class="price">
+    💰 ￥{{task.price}}
+  </view>
+
+  <view class="status">
+    状态：
+    <text wx:if="{{task.status == 0}}">⚪待接单</text>
+    <text wx:elif="{{task.status == 1}}">🟡 已接单</text>
+    <text wx:elif="{{task.status == 2}}">🟢 已完成</text>
+  </view>
+
+  <!-- 🔥 地址（后面做隐藏逻辑） -->
+  <view class="info" wx:if="{{task.address}}">
+  📍 地址：{{task.address}}
+</view>
+
+<view class="info" wx:if="{{task.phone}}">
+  📞 联系方式：{{task.phone}}
+</view>
+
+<view class="info" wx:if="{{!task.address}}">
+  🔒 接单后可查看地址
+</view>
+
+<view class="info" wx:if="{{!task.phone}}">
+  🔒 接单后可查看联系方式
+</view>
+
+  <!-- 🔥 接单按钮 -->
+  <button 
+    wx:if="{{task.status == 0}}"
+    class="btn"
+    bindtap="acceptTask"
+  >
+    接单
+  </button>
+
+</view>
+
+</view>

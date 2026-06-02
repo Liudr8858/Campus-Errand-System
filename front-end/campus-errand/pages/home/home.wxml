@@ -1,0 +1,63 @@
+<view style="padding: 20rpx;">
+
+<!-- 顶部banner -->
+<view class="banner">
+  <image 
+    style="width: 689rpx; height: 368rpx;" 
+    src="/pictures/jianzhu.jpg" 
+    mode="aspectFill"
+    class="banner-img"
+  />
+</view>
+
+<!-- 空数据提示 -->
+<view wx:if="{{taskList.length == 0}}" class="empty">
+  📭 暂无任务，快去发布一个吧～
+</view>
+
+<!-- 任务列表 -->
+<block wx:for="{{taskList}}" wx:key="id">
+
+  <view class="card"
+        bindtap="goDetail"
+        data-id="{{item.id}}">
+
+    <!-- 标题 -->
+    <view class="title">
+      {{item.title}}
+    </view>
+
+    <!-- 描述 -->
+    <view class="desc">
+      {{item.description}}
+    </view>
+
+    <!-- 价格 -->
+    <view style="margin-top: 10rpx;">
+      💰 <text class="price">￥{{item.price}}</text>
+    </view>
+
+    <!-- 状态 -->
+    <view style="margin-top: 10rpx;">
+      状态：
+      <text wx:if="{{item.status == 0}}"> ⚪待接单</text>
+      <text wx:elif="{{item.status == 1}}"> 🟡已接单</text>
+      <text wx:elif="{{item.status == 2}}"> 🟢已完成</text>
+    </view>
+
+    <!-- 接单按钮 -->
+    <button 
+      wx:if="{{item.status == 0}}" 
+      class="btn"
+      data-id="{{item.id}}" 
+      bindtap="acceptTask"
+      catchtap
+    >
+      接单
+    </button>
+
+  </view>
+
+</block>
+
+</view>

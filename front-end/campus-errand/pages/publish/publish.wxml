@@ -1,0 +1,50 @@
+<view style="padding: 20rpx;">
+
+<!-- 标题 -->
+<view class="card">
+  <view class="label">任务标题</view>
+  <input 
+    placeholder="请输入标题"
+    bindinput="getTitle"
+    class="input"
+  />
+</view>
+
+<!-- 描述 -->
+<view class="card">
+  <view class="label">任务描述</view>
+  <input 
+    placeholder="请输入描述"
+    bindinput="getDesc"
+    class="input"
+  />
+</view>
+
+<!-- 价格 -->
+<view class="card">
+  <view class="label">价格</view>
+  <input 
+    placeholder="请输入价格"
+    bindinput="getPrice"
+    class="input"
+    type="number"
+  />
+</view>
+
+<!-- 🔥 地址显示（核心） -->
+<view class="card">
+
+  <view class="label">收货地址</view>
+
+  <view style="margin-top: 10rpx; color:#333;">
+    {{address || '请先在个人中心设置地址'}}
+  </view>
+
+</view>
+
+<!-- 发布按钮 -->
+<button class="btn" bindtap="publish">
+  发布任务
+</button>
+
+</view>

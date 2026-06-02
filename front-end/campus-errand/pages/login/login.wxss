@@ -1,0 +1,15 @@
+/* pages/login/login.wxss */
+.container{
+  padding:40rpx;
+}
+
+input{
+  border:1px solid #ccc;
+  margin-bottom:20rpx;
+  padding:20rpx;
+}
+
+button{
+  background:#07c160;
+  color:white;
+}

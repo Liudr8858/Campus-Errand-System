@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/publish/publish",
+    "pages/myPublish/myPublish",
+    "pages/myAccept/myAccept",
+    "pages/profile/profile",
+    "pages/login/login",
+    "pages/taskdetail/taskdetail",
+    "pages/register/register"
+  ],
+  "window": {
+    "navigationBarTitleText": "校园跑腿"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/myPublish/myPublish",
+        "text": "我的发布"
+      },
+      {
+        "pagePath": "pages/myAccept/myAccept",
+        "text": "我的接单"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

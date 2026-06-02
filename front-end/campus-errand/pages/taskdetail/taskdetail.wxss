@@ -1,0 +1,41 @@
+.container{
+  padding: 20rpx;
+}
+
+.card{
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  box-shadow: 0 8rpx 20rpx rgba(0,0,0,0.05);
+}
+
+.title{
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.desc{
+  margin-top: 20rpx;
+  color: #666;
+}
+
+.price{
+  margin-top: 20rpx;
+  color: #ff4d4f;
+  font-size: 32rpx;
+}
+
+.status{
+  margin-top: 20rpx;
+}
+
+.info{
+  margin-top: 20rpx;
+  color: #333;
+}
+
+.btn{
+  margin-top: 30rpx;
+  background: #007aff;
+  color: #fff;
+}
